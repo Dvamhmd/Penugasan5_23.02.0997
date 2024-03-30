@@ -108,6 +108,7 @@ fun Awal(navController: NavController){
             Text(
                 text = "Hasil",
                 fontSize = 32.sp,
+                color = Color.White
 
             )
         }

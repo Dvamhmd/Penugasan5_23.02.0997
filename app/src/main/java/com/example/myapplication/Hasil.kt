@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.Icon
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -32,12 +33,17 @@ import androidx.navigation.NavController
 @Composable
 fun Hasil(pesan: String, nama: String, doa: String, pengirim: String, navController: NavController){
 
-    Image(
-        painter = painterResource(id = R.drawable.sky),
-        contentDescription = null,
-        contentScale = ContentScale.Crop,
-        alpha = 0.7f
-    )
+    Surface(
+        color = Color.White
+    ) {
+        Image(
+            painter = painterResource(id = R.drawable.sky),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            alpha = 0.7f
+        )
+    }
+
 
 
     Column (
@@ -60,7 +66,8 @@ fun Hasil(pesan: String, nama: String, doa: String, pengirim: String, navControl
             fontSize = 24.sp,
             textAlign = TextAlign.Center,
             modifier = Modifier.align(Alignment.CenterHorizontally),
-            fontFamily = FontFamily.Serif
+            fontFamily = FontFamily.Serif,
+            color = Color.Black
         )
         
         Spacer(modifier = Modifier.height(20.dp))
@@ -95,6 +102,7 @@ fun Hasil(pesan: String, nama: String, doa: String, pengirim: String, navControl
                 Spacer(modifier = Modifier.height(40.dp))
                 Text(
                     text = doa,
+                    color = Color.Black,
                     lineHeight = 26.sp,
                     textAlign = TextAlign.Center,
                     fontFamily = FontFamily.Serif,
@@ -111,6 +119,7 @@ fun Hasil(pesan: String, nama: String, doa: String, pengirim: String, navControl
     ){
         Text(
             text = "From",
+            color = Color.Black,
             fontSize = 25.sp,
             fontFamily = FontFamily.Serif ,
             modifier = Modifier
@@ -118,6 +127,7 @@ fun Hasil(pesan: String, nama: String, doa: String, pengirim: String, navControl
         )
         Text(
             text = pengirim,
+            color = Color.Black,
             fontSize = 60.sp,
             fontFamily = FontFamily.Cursive,
             fontWeight = FontWeight.Bold,
