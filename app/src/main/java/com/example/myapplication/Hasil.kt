@@ -103,7 +103,7 @@ fun Hasil(pesan: String, nama: String, doa: String, pengirim: String, navControl
                 Text(
                     text = doa,
                     color = Color.Black,
-                    lineHeight = 26.sp,
+                    lineHeight = 28.sp,
                     textAlign = TextAlign.Center,
                     fontFamily = FontFamily.Serif,
                     fontSize = 24.sp,
